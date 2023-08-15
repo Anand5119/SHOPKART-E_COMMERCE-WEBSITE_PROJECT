@@ -8,13 +8,14 @@
 
 # REQUIRMENTS:
 --------------
-* python 3.10
-* dj-database-url==0.4.2
-* MySQL 8.0
+* python==3.10
 * Django==4.0.3
+* MySQL==8.0
+* dj-database-url==0.4.2
 * django-bootstrap4==23.1
 * djangorestframework==3.14.0
 * mysql-connector-python==8.1.0
+* django-jazzmin==2.6.0
 * pipenv==2023.6.12
 * requests==2.31.0
 * sqlparse==0.4.2
