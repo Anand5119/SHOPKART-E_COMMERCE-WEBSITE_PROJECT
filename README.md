@@ -1,14 +1,22 @@
-### My first repository is awesome!
+#SHOPKART E-Commerce website
 
-I'm ------- and here it's my first GitHub repository.
-If you see this file on my project, it's because I'm learning Git.
+* It is a E-commerce website project.
+* Its's developed using Python Django framework for backend.
+* HTML5, CSS3 and Javascript is used for front end development.
 
-My mood:
+#REQUIRMENTS:
+* dj-database-url==0.4.2
+* Django==4.0.3
+* django-bootstrap4==23.1
+* djangorestframework==3.14.0
+* mysql-connector-python==8.1.0
+* pipenv==2023.6.12
+* requests==2.31.0
+* sqlparse==0.4.2
+* urllib3==2.0.3
+* virtualenv==20.23.0
+* virtualenv-clone==0.5.7
+* virtualenvwrapper-win==1.2.7
 
-> Happy
 
-My favorite color:
 
-> Black
-
-Thank you so much for reading! ☺
