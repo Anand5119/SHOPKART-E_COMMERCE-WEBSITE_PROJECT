@@ -1,0 +1,11 @@
+.carousel-item img{
+    margin-top:10px;
+    object-fit:contain ;
+    object-position:top;
+    height:70vh;
+    overflow:hidde;
+}
+.carousel slide lo.li{
+    margin-top:100px;
+    object-position:bottom;
+}
