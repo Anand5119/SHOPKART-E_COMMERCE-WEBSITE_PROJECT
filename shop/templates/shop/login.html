@@ -1,0 +1,44 @@
+{% extends 'shop/layouts/main.html' %}
+{% block content %}
+{% include 'shop/inc/message.html' %}
+
+<section class="vh-100 ">
+  <div class="container py-5 mt-5 h-100 ">
+    
+    <div class="row d-flex align-items-center justify-content-center border border-info rounded">
+      <span class="text-center h1 fw-bold my-4 mx-1 mx-md-4">Log in</span>
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-8 col-lg-7 col-xl-6 my-3">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+          class="img-fluid" alt="Phone image">
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form method="post" class="mx-1 mx-md-4"  action="">
+            {% csrf_token %} 
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example13">User name</label>
+              <input type="text" name="username" id="username" class="form-control form-control-lg" >
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example23">Password</label>
+              <input type="password" name="password" id="password" class="form-control form-control-lg" >
+            </div>
+
+            <!-- Submit button -->  
+            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Log in</button>
+            </div>
+            <!-- Register button -->  
+            <div class="form-outline mt-4">
+              <p class="d-flex justify-content-center ">Not a user? <a href="register"> Register now</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content%}   

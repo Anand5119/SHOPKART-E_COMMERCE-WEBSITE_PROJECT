@@ -1,0 +1,32 @@
+{% extends 'shop/layouts/main.html' %}
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="{% url 'home'%}">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">All Categories</li>
+      {% include 'shop/inc/message.html' %}
+    </ol>
+</nav>
+<section class="bg py-4 my-5">
+    <div class="container">
+        <div class='row'>
+            <div class='col-12'>
+                <h2 class='mb-3'>Catagories</h2>
+                <hr style="border-color:#b8bfc2;">
+            </div>
+            {% for item in Catagory %}
+            <section class="col-md-4 col-lg-3">
+                <div class="card my-3 d-flex justify-content-center">         
+                    <img src="{{item.image.url}}" class="card-img-top img-thumbnail fit" style="min-height:250px; max-height:250px"alt="catagoryImage" >
+                    <div class="card-body d-flex flex-column" style="min-height:180px; max-height:180px">
+                            <h5 class="card-title text-primary text-center" alt='catagoryName'>{{item.name}}</h5>
+                            <p class="card-text text-center">{{item.description}}</p>
+                            <a class="btn btn-sm btn-lg btn-block btn-outline-primary mt-auto" href="{% url 'collections' item.name %}"  alt='Details'>View Details</a>
+                        </div>
+                </div>
+            </section>
+            {% endfor%}
+        </div>
+    </div>
+</section> 
+{% endblock content%}
