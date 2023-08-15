@@ -1,10 +1,13 @@
-#SHOPKART E-Commerce website
+# SHOPKART E-Commerce website:
+------------------------------
 
 * It is a E-commerce website project.
 * Its's developed using Python Django framework for backend.
 * HTML5, CSS3 and Javascript is used for front end development.
 
-#REQUIRMENTS:
+# REQUIRMENTS:
+--------------
+
 * dj-database-url==0.4.2
 * Django==4.0.3
 * django-bootstrap4==23.1
