@@ -3,7 +3,7 @@
 
 * It is a E-commerce website project.
 * Its's developed using Python and Django framework for backend development.
-* HTML5, CSS3 and Javascript is used for front end development.
+* HTML5, CSS3,Javascript and Bootstrap are used for front end development.
 * MySQL 8.0 is used for database.
 
 # REQUIRMENTS:
